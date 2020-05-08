@@ -1,0 +1,14 @@
+{
+    "name": "adrianocastro/noted",
+    "description": "A World of Warcraft addon for taking notes with a cloud service to store them.",
+    "authors": [
+        {
+            "name": "Adriano Castro",
+            "email": "adrianocastro189@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    }
+}
