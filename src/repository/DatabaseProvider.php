@@ -35,4 +35,11 @@ interface DatabaseProvider {
      * @return array
      */
     public function getResults(string $sql) : array;
+    
+    /**
+     * Must return true when the database is valid.
+     * 
+     * @return bool
+     */
+    public function isValid() : bool;
 }

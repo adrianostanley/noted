@@ -1,16 +1,8 @@
 <?php
 
-require '../src/core/Defaults.php';
+declare(strict_types=1);
 
-require '../src/domain/Entity.php';
-require '../src/domain/Note.php';
-require '../src/domain/Player.php';
-
-require '../src/helper/DateTimeHelper.php';
-
-require '../src/repository/DatabaseProvider.php';
-require '../src/repository/Repository.php';
-require '../src/repository/NoteRepository.php';
+require '../vendor/autoload.php';
 
 use Noted\Repository\DatabaseProvider;
 
@@ -36,6 +28,10 @@ final class MockDatabaseProvider implements DatabaseProvider {
 
     public function getDatabasePrefix(): string {
         return 'mockdb';
+    }
+
+    public function isValid(): bool {
+        return true;
     }
 
 }

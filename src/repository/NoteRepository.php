@@ -13,7 +13,7 @@ use Noted\Domain\Note;
 class NoteRepository extends Repository {
 
     protected function getEntityClass(): string {
-        return get_class(new Note());
+        return Note::class;
     }
     
     protected function getTableName(): string {
