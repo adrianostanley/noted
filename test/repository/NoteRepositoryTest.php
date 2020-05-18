@@ -10,10 +10,10 @@ use Noted\Repository\NoteRepository;
  *
  * @author Adriano
  */
-class NoteRepositoryTest extends TestCase {
+class NoteRepositoryTest extends DatabaseTestBase {
 
     public function testSelectAllNotes(): void {
-        $repository = new NoteRepository(new MockDatabaseProvider());
+        $repository = new NoteRepository($this->getDatabaseProvider());
 
         $allNotes = $repository->listAll();
 

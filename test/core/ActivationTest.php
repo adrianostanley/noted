@@ -2,17 +2,16 @@
 
 declare(strict_types=1);
 
-use PHPUnit\Framework\TestCase;
 use Noted\Core\Activation;
 
-final class ActivationTest extends TestCase {
+final class ActivationTest extends DatabaseTestBase {
 
     public function testActivation() {
-        $databaseProvider = new MockDatabaseProvider();
-        
-        $activation = new Activation($databaseProvider);
+        $activation = new Activation($this->getDatabaseProvider());
         $activation->activatePlugin();
         
-        $this->assertCount(1, $databaseProvider->tables);
+		$tables = $this->getDatabaseProvider()->getResults("SELECT table_name AS 'table' FROM information_schema.tables WHERE table_schema = 'noted'");
+
+		$this->assertNotEmpty($tables);
     }
 }

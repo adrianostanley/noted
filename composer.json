@@ -10,11 +10,8 @@
     "autoload" : {
         "psr-4": {"Noted\\": "src/"}
     },
-    "require": {},
     "require-dev": {
-        "ext-PDO": "* 7.2.17",
-        "ext-pdo_mysql": "* 7.2.17",
         "phpunit/phpunit": "^8",
-        "ext-pdo_sqlite": "* 7.2.17"
+        "ext-mysqli": "*"
     }
 }

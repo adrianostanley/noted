@@ -30,21 +30,3 @@ class Activation {
         $this->databaseProvider->createTable(ActivationQueries::$playerTable['tableName'], ActivationQueries::$playerTable['columns']);
     }
 }
-
-/**
- * This is the main script of the plugin activation.
- *
- * @author Adriano
- */
-class ActivationQueries {
-
-    public static $playerTable = [
-        'tableName' => 'player',
-        'columns' => '
-            id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-            player_name VARCHAR(55) NOT NULL,
-            PRIMARY KEY (id)
-        '
-    ];
-
-}

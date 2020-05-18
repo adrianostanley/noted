@@ -11,8 +11,8 @@ namespace Noted\Repository;
  * @author Adriano
  */
 interface DatabaseProvider {
-    
-    /**
+
+	/**
      * Must provide a way to create a table in the database.
      * 
      * @param string $tableName
@@ -27,19 +27,27 @@ interface DatabaseProvider {
      * @return string
      */
     public function getDatabasePrefix() : string;
-    
-    /**
-     * Must provide a way to execute an SQL and return its results.
-     * 
-     * @param string $sql
-     * @return array
-     */
-    public function getResults(string $sql) : array;
-    
-    /**
-     * Must return true when the database is valid.
-     * 
-     * @return bool
-     */
-    public function isValid() : bool;
+
+	/**
+	 * Must provide a way to run a SQL query.
+	 *
+	 * @param string $query
+	 * @return int
+	 */
+	public function query(string $query): int;
+
+	/**
+	 * Must provide a way to execute an SQL and return its results.
+	 *
+	 * @param string $query
+	 * @return array
+	 */
+	public function getResults(string $query): array;
+
+	/**
+	 * Must provide a way to test a connection.
+	 *
+	 * @return bool
+	 */
+	public function testConnection(): bool;
 }

@@ -11,9 +11,11 @@ namespace Noted\Domain;
  */
 abstract class Entity {
 
-    /**
-     * This function must implement a way to a mixed object - like those ones
-     * returned by database queries - fill this instance properties.
-     */
+	/**
+	 * This function must implement a way to a mixed object - like those ones
+	 * returned by database queries - fill this instance properties.
+	 *
+	 * @param Object|null $object
+	 */
     public abstract function setPropertiesFromObject(? Object $object): void;
 }

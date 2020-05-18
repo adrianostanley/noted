@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4753cb1f-4d8b-4cd2-8f1f-97e73456f505" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1c5kjHrydg6FBU8j8DpHmgKoqfE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/configuration.xml" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RunManager" selected="PHPUnit.Noted - All">
+    <configuration name="ActivationTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="ActivationTest" file="$PROJECT_DIR$/test/core/ActivationTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ActivationTest.testActivation" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="ActivationTest" file="$PROJECT_DIR$/test/core/ActivationTest.php" method="testActivation" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MySQLDatabaseProviderTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner bootstrap_file="$PROJECT_DIR$/test/bootstrap.php" class="MySQLDatabaseProviderTest" configuration_file="$PROJECT_DIR$/test/configuration.xml" directory="$PROJECT_DIR$/test" file="$PROJECT_DIR$/test/repository/MySQLDatabaseProviderTest.php" scope="Class" use_alternative_bootstrap_file="true" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Noted - All" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <TestRunner bootstrap_file="$PROJECT_DIR$/test/bootstrap.php" configuration_file="$PROJECT_DIR$/test/configuration.xml" directory="$PROJECT_DIR$/test" use_alternative_bootstrap_file="true" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="PHPUnit.Noted - All" />
+      <item itemvalue="PHPUnit.ActivationTest" />
+      <item itemvalue="PHPUnit.ActivationTest.testActivation" />
+      <item itemvalue="PHPUnit.MySQLDatabaseProviderTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.MySQLDatabaseProviderTest" />
+        <item itemvalue="PHPUnit.ActivationTest" />
+        <item itemvalue="PHPUnit.ActivationTest.testActivation" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4753cb1f-4d8b-4cd2-8f1f-97e73456f505" name="Default Changelist" comment="" />
+      <created>1589825974422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589825974422</updated>
+      <workItem from="1589825976910" duration="607000" />
+      <workItem from="1589826626282" duration="3455000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="644" y="122" key="#ActivationTest" timestamp="1589828132755">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="644" y="105" key="#ActivationTest.testActivation" timestamp="1589828120121">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="644" y="105" key="#ActivationTest.testActivation/0.0.1920.1050@0.0.1920.1050" timestamp="1589828120121" />
+    <state x="644" y="122" key="#ActivationTest/0.0.1920.1050@0.0.1920.1050" timestamp="1589828132755" />
+    <state x="540" y="180" key="#Test_Frameworks" timestamp="1589826058480">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="540" y="180" key="#Test_Frameworks/0.0.1920.1050@0.0.1920.1050" timestamp="1589826058480" />
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589828804841">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="414" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1589828804841" />
+    <state x="765" y="207" key="#com.intellij.ide.util.MemberChooser" timestamp="1589826785323">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="765" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1589826785323" />
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1589826062872">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1589826062872" />
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1589830084235">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1589830084235" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1589830084235">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1589830084235" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1589830084234">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1589830084234" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1589830084235">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1589830084235" />
+    <state x="775" y="248" key="NewPhpClassDialog" timestamp="1589827888588">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="775" y="248" key="NewPhpClassDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1589827888588" />
+    <state x="794" y="448" key="NewPhpFileDialog" timestamp="1589827394299">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="794" y="448" key="NewPhpFileDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1589827394299" />
+    <state x="461" y="170" key="SettingsEditor" timestamp="1589826162322">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="170" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1589826162322" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1589829445073">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1589829445073" />
+  </component>
+</project>

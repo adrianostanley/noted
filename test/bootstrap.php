@@ -2,36 +2,34 @@
 
 declare(strict_types=1);
 
+use Noted\Repository\MySQLDatabaseProvider;
+use PHPUnit\Framework\TestCase;
+
 require '../vendor/autoload.php';
 
-use Noted\Repository\DatabaseProvider;
+abstract class DatabaseTestBase extends TestCase {
 
-final class MockDatabaseProvider implements DatabaseProvider {
-    
-    public $tables = array();
-    
-    public function getResults(string $sql) : array {
-        if ('SELECT * FROM mockdb_note' == $sql) {
-            return [
-                (object) ['noteId' => '1', 'noteContent' => 'First note', 'playerGuid' => 'Player-3675-0872E1EC', 'takenOn' => '2020-01-01 00:00:00'],
-                (object) ['noteId' => '2', 'noteContent' => 'Second note', 'playerGuid' => 'Player-3675-0872E1EC', 'takenOn' => '2020-01-01 00:00:00'],
-                (object) ['noteId' => '3', 'noteContent' => 'Third note', 'playerGuid' => 'Player-3675-0872E1EC', 'takenOn' => '2020-01-01 00:00:00']
-            ];
-        }
-        return [];
-    }
+	private static MySQLDatabaseProvider $databaseProvider;
 
-    public function createTable(string $tableName, string $columns): void {
-        // Just pretend the table was created in the database
-        $this->tables[] = $tableName;
-    }
+	/**
+	 * Helper method to ease on the database provider usage.
+	 *
+	 * @return MySQLDatabaseProvider
+	 */
+	protected function getDatabaseProvider(): MySQLDatabaseProvider {
+		return DatabaseTestBase::$databaseProvider;
+	}
 
-    public function getDatabasePrefix(): string {
-        return 'mockdb';
-    }
+	public static function setUpBeforeClass(): void {
+		parent::setUpBeforeClass();
 
-    public function isValid(): bool {
-        return true;
-    }
+		DatabaseTestBase::$databaseProvider = new MySQLDatabaseProvider($GLOBALS['DB_HOST'], $GLOBALS['DB_USER'], $GLOBALS['DB_PASSWD'], $GLOBALS['DB_DBNAME']);
+	}
+
+	public static function tearDownAfterClass(): void  {
+		parent::tearDownAfterClass();
+
+		DatabaseTestBase::$databaseProvider->closeConnection();
+	}
 
 }
